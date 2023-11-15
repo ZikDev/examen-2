@@ -3,10 +3,15 @@
 // ==================================== */
 
 :root {
+  --black: #0e0e0e;
+  --button: #524128;
+  --main-color: #344930;
+  --twis-color: #657e65;
+  --withe: #ffffff;
 }
 
 /* ====================================
-// reset rules
+// starter
 // ==================================== */
 
 * {
@@ -43,10 +48,88 @@ video {
   margin-top: 16px;
 }
 
+/* 
 .row > .col,
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
+}
+*/
+
+/* ====================================
+// main css mobile
+// ==================================== */
+
+body {
+  color: var(--withe);
+}
+
+header {
+  background: var(--black);
+}
+
+.presentation {
+  background: url(../img/tavern.jpg), lightgray 50% / cover no-repeat;
+}
+
+.menu {
+  background: var(--main-color);
+}
+
+.fournisseurs {
+  background: var(--twis-color);
+}
+
+.inscription {
+  background: var(--main-color);
+}
+
+footer {
+  background: var(--black);
+}
+
+@media (max-width: 768px) {
+  .burger-langues,
+  .ancre {
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+
+  .fr {
+    color: var(--twis-color);
+  }
+
+  h1 {
+    text-align: center;
+    font-family: Yeseva One;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: Yeseva One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  p {
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
