@@ -8,6 +8,7 @@
   --main-color: #344930;
   --twis-color: #657e65;
   --withe: #ffffff;
+  --gray: #aaaaaa;
 }
 
 /* ====================================
@@ -90,8 +91,8 @@ footer {
   background: var(--black);
 }
 
-@media (max-width: 768px) {
-  .burger-langues,
+@media (max-width: 1200px) {
+  .langues a,
   .ancre {
     text-align: center;
     font-family: Nunito Sans;
@@ -131,5 +132,62 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  h3 {
+    color: var(--gray, #aaa);
+    font-family: Yeseva One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .nom {
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  footer .nom {
+    text-align: left;
+  }
+
+  .description {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .metier {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .button a {
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+
+  .button {
+    background: var(--button);
+  }
+
+  .fournisseur {
+    background: var(--main-color);
+    width: 176px;
   }
 }
