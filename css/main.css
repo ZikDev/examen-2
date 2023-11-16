@@ -92,6 +92,32 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  footer,
+  .presentation,
+  .menu,
+  .fournisseurs,
+  .inscription {
+    padding: 50px 15px;
+  }
+
+  .contact {
+    margin: 15px;
+  }
+
+  .intro {
+    margin-bottom: 25px;
+  }
+
+  .fournisseur {
+    width: 176px;
+  }
+
+  .fournisseur img {
+    width: 176px;
+    height: 222.387px;
+    flex-shrink: 0;
+  }
+
   .langues a,
   .ancre {
     text-align: center;
@@ -114,6 +140,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 25px;
   }
 
   h2 {
@@ -123,6 +150,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 50px;
   }
 
   p {
@@ -184,7 +212,23 @@ footer {
 
   .button {
     background: var(--button);
+    width: 244px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
   }
+
+  .button .hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45) inset;
+  }
+
+  /* utilider le js pour le survol des boutons*/
 
   .fournisseur {
     background: var(--main-color);
