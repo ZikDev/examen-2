@@ -108,14 +108,42 @@ footer {
     margin-bottom: 25px;
   }
 
+  .menu img {
+    margin: 50px 0px;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+
   .fournisseur {
-    width: 176px;
+    padding: 0;
+    background: var(--main-color);
+    transform: translateX(0);
+    transition: transform 0.2s;
+  }
+
+  .cartes {
+    padding: 15px;
+    margin: auto;
+  }
+
+  .metier {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    margin-top: 10px;
   }
 
   .fournisseur img {
-    width: 176px;
-    height: 222.387px;
     flex-shrink: 0;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .fournisseur:hover {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateX(-2%);
   }
 
   .langues a,
@@ -220,18 +248,10 @@ footer {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 50px auto 0px;
   }
 
-  .button .hover {
+  .button:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45) inset;
-  }
-
-  /* utilider le js pour le survol des boutons*/
-
-  .fournisseur {
-    background: var(--main-color);
-    width: 176px;
   }
 }
