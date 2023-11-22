@@ -73,6 +73,7 @@ header {
 
 .presentation {
   background: url(../img/tavern.jpg), lightgray 50% / cover no-repeat;
+  background-size: cover;
 }
 
 .menu {
@@ -92,6 +93,95 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0e0e0e;
+    height: 200px;
+  }
+
+  .navigation {
+    height: 70px;
+    transition: height 0.2s;
+  }
+
+  .logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+
+  .burger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    width: 30px;
+    height: 19px;
+  }
+
+  .burger div {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .burger div:nth-child(1) {
+    top: 0;
+  }
+
+  .burger div:nth-child(2) {
+    top: 8px;
+  }
+
+  .burger div:nth-child(3) {
+    top: 16px;
+  }
+
+  .burger.is-active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .burger.is-active div:nth-child(2) {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  .burger.is-active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav.is-active {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    scale: 0;
+    transition: scale 0.2s;
+  }
+
+  .nav a:hover {
+    color: var(--twis-color);
+  }
+
+  .presentation.is-active {
+    margin-top: 200px;
+  }
+
+  .presentation {
+    margin-top: 70px;
+    transition: margin-top 0.2s;
+  }
+
   footer,
   .presentation,
   .menu,
@@ -102,14 +192,6 @@ footer {
 
   .contact {
     margin: 15px;
-  }
-
-  .intro {
-    margin-bottom: 25px;
-  }
-
-  .menu img {
-    margin: 50px 0px;
     object-fit: cover;
     height: 300px;
     width: 100%;
@@ -120,11 +202,11 @@ footer {
     background: var(--main-color);
     transform: translateX(0);
     transition: transform 0.2s;
+    height: 100%;
   }
 
   .cartes {
-    padding: 15px;
-    margin: auto;
+    margin: 15px;
   }
 
   .metier {
@@ -136,9 +218,8 @@ footer {
   }
 
   .fournisseur img {
-    flex-shrink: 0;
-    margin: 0;
     object-fit: cover;
+    margin: 0;
   }
 
   .fournisseur:hover {

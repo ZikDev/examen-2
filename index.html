@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
     <title>Examen 2</title>
   </head>
   <body>
@@ -20,25 +21,26 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-12 col-sm-12">
-            <img src="img/logo.svg" alt="logo du restaurant" class="logo" />
-            <nav>
-              <a href="#carte" class="ancre">Carte</a>
-              <a href="#fournisseur" class="ancre">Fourniseur</a>
-              <a href="#feedback" class="ancre">Feedback</a>
-              <a href="#contact" class="ancre">Contact</a>
-              <div class="langues">
-                <a href="" class="fr">Fr</a>
-                <a href="">/</a>
-                <a href="" class="ef">Ef</a>
+            <div class="navigation">
+              <img src="img/logo.svg" alt="logo du restaurant" class="logo" />
+              <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
               </div>
-            </nav>
-            <div class="bruger-langue">
-              <a href="" class="fr">Fr</a>
-              <a href="">/</a>
-              <a href="" class="ef">Ef</a>
+              <nav class="nav">
+                <a href="#carte" class="ancre">Carte</a>
+                <a href="#fournisseur" class="ancre">Fourniseur</a>
+                <a href="#feedback" class="ancre">Feedback</a>
+                <a href="#contact" class="ancre">Contact</a>
+                <div class="langues">
+                  <a href="" class="fr">Fr</a>
+                  <a href="">/</a>
+                  <a href="" class="ef">Ef</a>
+                </div>
+              </nav>
             </div>
-            <img src="img/burger.svg" alt="burger menu" class="burger" />
-            <img src="img/cross.png" alt="une croix" class="cross" />
+
             <!--utiliser le fait qu'on peut changer l'ordre des elements en css 
               pour faire que la nav soit après burger/langue (en vrai en dessous 
               mais on se comprend tkt) en mobile et ajouter la lanue dan la nav 
