@@ -100,13 +100,14 @@ footer {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
   }
 
   .logo {
     position: fixed;
     top: 15px;
     left: 15px;
-    z-index: 1;
+    z-index: 2;
     height: 30px;
   }
 
@@ -116,7 +117,7 @@ footer {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .burger div {
@@ -124,6 +125,7 @@ footer {
     width: 100%;
     height: 3px;
     background: var(--withe);
+    transition: transform 0.3s, opacity 0.3s;
   }
 
   .burger div:nth-child(1) {
@@ -138,16 +140,48 @@ footer {
     top: 16px;
   }
 
+  .burger.is-active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .burger.is-active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.is-active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   .nav {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background: var(--black);
+    height: 180px;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    z-index: 1;
+  }
+
+  .nav.is-active {
+    pointer-events: auto;
+    transform: translateY(0);
+    z-index: 1;
   }
 
   .nav a:hover {
     color: var(--twis-color);
+  }
+
+  .presentation {
+    margin-top: 60px;
   }
 
   footer,
