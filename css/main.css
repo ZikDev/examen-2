@@ -194,9 +194,6 @@ footer {
 
   .contact {
     margin: 15px;
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
   }
 
   .fournisseur {
