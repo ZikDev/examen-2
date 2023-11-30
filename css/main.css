@@ -348,4 +348,41 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  .burger {
+    display: none;
+  }
+
+  .nav {
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: Yeseva One;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .intro,
+  .menu,
+  .metier,
+  .button a,
+  .inscription p {
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
