@@ -359,14 +359,6 @@ footer {
     z-index: 2;
   }
 
-  .headbar {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 25px 0;
-  }
-
   .burger {
     display: none;
   }
@@ -382,7 +374,7 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-self: flex-end;
-    min-width: 1000px;
+    margin: auto;
   }
 
   .nav a {
@@ -399,6 +391,7 @@ footer {
 
   .logo {
     height: 45px;
+    margin: 25px 0;
   }
 
   h1 {
@@ -517,6 +510,7 @@ footer {
 
   .presentation {
     padding: 150px;
+    margin-top: 95px;
   }
 
   .fournisseurs,
