@@ -351,6 +351,12 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  header .col-xl-12 {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 25px 0;
+  }
+
   .burger {
     display: none;
   }
@@ -365,6 +371,11 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  .nav a {
+    text-decoration: none;
   }
 
   .logo {
@@ -436,7 +447,7 @@ footer {
   }
 
   .menu img {
-    height: 600px;
+    height: 100%;
     width: 100%;
   }
 
@@ -455,6 +466,17 @@ footer {
 
   .button:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45) inset;
+  }
+
+  .menu .col-xl-4 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plats {
+    margin: 75px 0;
   }
 
   .fournisseur {
